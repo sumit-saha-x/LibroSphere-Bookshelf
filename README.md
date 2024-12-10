@@ -10,17 +10,17 @@ Data Persistence: Stores book and note data in a PostgreSQL database for robust,
 
 # 🏗️ Project Structure
 /public
-  ├─ /assets
-      └─ /images/covers       # Folder to store book cover images
+├─ /assets
+└─ /images/covers # Folder to store book cover images
 /views
-  ├─ index.ejs                # Homepage with book list
-  ├─ new.ejs                  # Form to add new books
-  ├─ edit.ejs                 # Form to edit existing books
-  ├─ notes.ejs                # Notes section for each book
-src
-  ├─ index.js                 # Main server file
-.env                          # Environment variables
-README.md                     # Project documentation
+├─ index.ejs # Homepage with book list
+├─ new.ejs # Form to add new books
+├─ edit.ejs # Form to edit existing books
+├─ notes.ejs # Notes section for each book
+/src
+├─ index.js # Main server file
+.env # Environment variables
+README.md # Project documentation
 
 # 🚀 Project Setup/ Running Locally
 1. Clone the Repository.
@@ -35,20 +35,20 @@ In pgAdmin or using the psql command-line, create the following database structu
 Database: bookNotes
 Tables:-
 1. books
-Column	Type	Description
-id	SERIAL	Primary key
-isbn	VARCHAR	ISBN of the book
-title	VARCHAR	Book title
-author	VARCHAR	Book author
-description	TEXT	Book description
-rating	INTEGER	Rating (out of 5)
-date_read	DATE	Date the book was read
+Column	Type	Description<br>
+id	SERIAL	Primary key<br>
+isbn	VARCHAR	ISBN of the book<br>
+title	VARCHAR	Book title<br>
+author	VARCHAR	Book author<br>
+description	TEXT	Book description<br>
+rating	INTEGER	Rating (out of 5)<br>
+date_read	DATE	Date the book was read<br>
 image_path	TEXT	Path to the book cover image
 
 2. notes
-Column	Type	Description
-id	SERIAL	Primary key
-note	TEXT	The note content
+Column	Type	Description<br>
+id	SERIAL	Primary key<br>
+note	TEXT	The note content<br>
 book_id	INTEGER	Foreign key referencing books.id
 
 4. Create an .env File
