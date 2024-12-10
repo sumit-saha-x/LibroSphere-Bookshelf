@@ -1,5 +1,5 @@
-# 📚 BookNotes - Book Review & Note-taking Web App
-BookNotes is a personal web application designed to help users organize their non-fiction book reviews, track reading progress, and maintain notes for easy reference. Featuring sorting options, an integrated cover image fetcher, and an intuitive note-taking interface, BookNotes brings simplicity and structure to book tracking.
+# 📚 LibroSphere - Book Review & Note-taking Web App
+LibroSphere-Bookshelf is a personal web application designed to help users organize their non-fiction book reviews, track reading progress, and maintain notes for easy reference. Featuring sorting options, an integrated cover image fetcher, and an intuitive note-taking interface, BookNotes brings simplicity and structure to book tracking.
 
 # 📋 Features
 Home Page with Book List: Displays all stored books with sorting options by title, rating, or date read.
