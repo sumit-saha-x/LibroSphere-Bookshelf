@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bookshelf</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <div class="container">
+         <!-- Header Section -->
+         <header>
+            <h1>Welcome to My Bookshelf</h1>
+            <p>This is a place to store and review the non-fiction books I have read, along with my notes and ratings.</p>
+        </header>
+
+        <!-- Main Buttons Section -->
+        <section class="controls">
+            <button onclick="window.location.href='/books/new'">New Entry</button>
+            <select id="sortDropdown" onchange="sortBooks()">
+                <option selected disabled>Order By</option>  
+                <option value="title">Sort by Title</option>
+                <option value="date_read">Sort by Date Read</option>
+                <option value="rating">Sort by Rating</option>
+            </select>
+        </section>
+        
+        <!-- Book List Section -->
+        <%- include('partials/book-item.ejs') %>
+
+        <script>
+            function sortBooks() {
+                const sortBy = document.getElementById('sortDropdown').value;
+                window.location.href = `/books?sort=${sortBy}`;
+            }
+        </script>
+    </div>
+</body>
+</html>

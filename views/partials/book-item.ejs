@@ -1,0 +1,30 @@
+        <section class="book-list">
+            <% books.forEach(book => { %>
+                <div class="book-item">
+                    <!-- Book Image on the left -->
+                    <div class="book-image">
+                        <img src="<%= book.image_path %>" alt="<%= book.title %>">
+                    </div>
+
+                    <!-- Book Details on the right -->
+                    <div class="book-details">
+                        <h3><%= book.title %></h3>
+                        <p><strong>By:</strong> <%= book.author %></p>
+                        <p><strong>Date Read:</strong> <%= new Date(book.date_read).toDateString() %></p>
+                        <p><strong>Description:</strong> <%= book.description %></p>
+                        <p><strong>Rating:</strong> <%= book.rating %>/5</p>
+
+                        <!-- Book Action Buttons -->
+                        <div class="book-actions">
+                            <button onclick="window.location.href='/books/<%= book.id %>/edit'">Edit</button>
+                            <form action="/books/<%= book.id %>/delete" method="POST" class="inline-form">
+                                <input type="hidden" value="DELETE">
+                                <button type="submit">Delete</button>
+                            </form>
+                            <button onclick="window.location.href='/books/<%= book.id %>/notes'">View Notes</button>
+                        </div>
+                    </div>
+                </div>
+            <% }) %>
+        </section>
+    </div>

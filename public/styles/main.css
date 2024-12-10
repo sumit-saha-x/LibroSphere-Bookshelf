@@ -1,0 +1,240 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Main Buttons Section */
+.controls {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button, select {
+    padding: 10px 20px;
+    border: none;
+    background-color: #5ca4a9;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button:hover, select:hover {
+    background-color: #428b89;
+}
+
+select {
+    font-size: 1em;
+}
+
+button {
+    display: inline-block;
+}
+
+/* Book List */
+.book-list {
+    margin: 20px 0;
+}
+
+.book-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    margin-bottom: 15px;
+}
+
+/* Book image and content */
+.book-item img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.book-details {
+    flex-grow: 1;
+}
+
+.book-details h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.book-details p {
+    color: #666;
+    margin: 5px 0;
+}
+
+.book-actions {
+    display: flex;
+    align-items: center;
+}
+
+/* Action buttons (edit, delete, new note) */
+.book-actions button, .book-actions img {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+/* Notes Section */
+.notes-list .note-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notes-list .note-item p {
+    flex-grow: 1;
+    color: #333;
+    padding-right: 10px;
+}
+
+.note-actions {
+    display: flex;
+    align-items: center;
+}
+
+.note-actions img {
+    width: 18px;
+    height: 18px;
+    margin-left: 10px;
+}
+
+/* Forms (add and edit book/note) */
+form {
+    display: block;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+form input[type="submit"], form button {
+    background-color: #5ca4a9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form input[type="submit"]:hover, form button:hover {
+    background-color: #428b89;
+}
+
+/* Form footer */
+.form-footer {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-footer a {
+    text-decoration: none;
+    color: #5ca4a9;
+}
+
+.form-footer a:hover {
+    color: #428b89;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .book-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .book-details {
+        margin-top: 10px;
+    }
+
+    .book-item img {
+        width: 80px;
+        height: 120px;
+    }
+
+    .controls button, .controls select {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+.home-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.home-button .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Adjust as needed */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.home-button .btn:hover {
+    background-color: #0056b3; /* Adjust as needed */
+}
+

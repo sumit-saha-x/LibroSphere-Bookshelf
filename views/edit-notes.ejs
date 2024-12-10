@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Note</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Edit Note</h1>
+        </header>
+
+        <section class="edit-note">
+            <form action="/notes/<%= note.id %>/edit" method="POST">
+                <input type="hidden" name="bookId" value="<%= note.book_id %>">
+                <textarea name="note" rows="4" required><%= note.note %></textarea>
+                <button type="submit" class="btn">Update Note</button>
+            </form>            
+        </section>
+    </div>
+</body>
+</html>

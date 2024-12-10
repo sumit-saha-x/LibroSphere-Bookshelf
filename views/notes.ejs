@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Notepad Header -->
+        <header>
+            <h1>Notepad</h1>
+        </header>
+
+        <!-- Book Info Section -->
+        <section class="book-info">
+            <div class="book-image">
+                <img src="<%= book.image_path %>" alt="<%= book.title %>">
+            </div>
+            <div class="book-details">
+                <h2><%= book.title %></h2>
+                <p><strong>By:</strong> <%= book.author %></p>
+            </div>
+        </section>
+
+        <!-- Notes List Section -->
+        <section class="notes-list">
+            <% notes.forEach(note => { %>
+                <div class="note-item">
+                    <p><%= note.note %></p>
+                    <div class="note-actions">
+                        <button onclick="window.location.href='/notes/<%= note.id %>/edit'">
+                            <img src="/assets/images/pencil-solid.png" alt="Edit" class="icon">
+                        </button>
+                        <form action="/notes/<%= note.id %>/delete" method="POST" class="inline-form">
+                            <button type="submit">
+                                <img src="/assets/images/delete-icon.png" alt="Delete" class="icon">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            <% }) %>
+        </section>
+
+        <!-- Add New Note Section -->
+        <section class="add-note">
+            <form action="/books/<%= book.id %>/notes" method="POST">
+                <textarea name="note" rows="4" placeholder="Write your note here..." required></textarea>
+                <button type="submit" class="btn">Add Note</button>
+            </form>
+            <div class="home-button">
+                <a href="/" class="btn">Home</a>
+            </div>            
+        </section>
+    </div>
+</body>
+</html>
