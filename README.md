@@ -82,6 +82,7 @@ Cover images are stored in the /public/assets/images/covers directory. Make sure
 
 # 📷 Screenshots
 1. Home Page
+
 ![Home Page](public/assets/ss/Homepg.png)
 
 2. Book Detail with Notes
