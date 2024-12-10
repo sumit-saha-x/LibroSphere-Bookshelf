@@ -9,18 +9,18 @@ Automated Cover Image Fetching: Uses the Open Library API to retrieve and store 
 Data Persistence: Stores book and note data in a PostgreSQL database for robust, scalable storage.
 
 # 🏗️ Project Structure
-/public
-├─ /assets
-└─ /images/covers # Folder to store book cover images
-/views
-├─ index.ejs # Homepage with book list
-├─ new.ejs # Form to add new books
-├─ edit.ejs # Form to edit existing books
-├─ notes.ejs # Notes section for each book
-/src
-├─ index.js # Main server file
-.env # Environment variables
-README.md # Project documentation
+/public<br>
+├─ /assets<br>
+└─ /images/covers # Folder to store book cover images<br>
+/views<br>
+├─ index.ejs # Homepage with book list<br>
+├─ new.ejs # Form to add new books<br>
+├─ edit.ejs # Form to edit existing books<br>
+├─ notes.ejs # Notes section for each book<br>
+/src<br>
+├─ index.js # Main server file<br>
+.env # Environment variables<br>
+README.md # Project documentation<br>
 
 # 🚀 Project Setup/ Running Locally
 1. Clone the Repository.
@@ -71,25 +71,27 @@ nodemon index.js
 Open Library API: Used to fetch book cover images based on ISBN. Covers are downloaded, saved locally, and displayed in the app.
 
 # 🔄 CRUD Operations Summary
-View All Books: Displays a list of all books with sortable options.
-Add a Book: Opens a form to add new book details. After adding the ISBN, the cover image is automatically fetched.
-Edit Book Details: Allows editing of book details and cover image.
-Delete a Book: Deletes the selected book and its associated notes.
-View and Manage Notes: Each book page has a section to add, edit, or delete notes.
+View All Books: Displays a list of all books with sortable options.<br>
+Add a Book: Opens a form to add new book details. After adding the ISBN, the cover image is automatically fetched.<br>
+Edit Book Details: Allows editing of book details and cover image.<br>
+Delete a Book: Deletes the selected book and its associated notes.<br>
+View and Manage Notes: Each book page has a section to add, edit, or delete notes.<br>
 🔧 Additional Notes
 Make sure your database connection details in .env match your PostgreSQL setup.
 Cover images are stored in the /public/assets/images/covers directory. Make sure this directory is accessible for image rendering.
 
 # 📷 Screenshots
-1. Home Page
-
+1. Home Page<br>
 ![Home Page](public/assets/ss/Homepg.png)
 
-2. Book Detail with Notes
+2. Book Detail with Notes<br>
+![Notes_Page](public/assets/ss/Detail.png)
 
-3. Add New Book
+3. Add New Book<br>
+![Add](public/assets/ss/Add.png)
 
-4. Edit Notes
+4. Edit Notes<br>
+![Edit](public/assets/ss/Edit.png)
 
 🔗 License
 This project is licensed under the MIT License.
