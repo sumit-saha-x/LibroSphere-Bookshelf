@@ -84,13 +84,13 @@ Cover images are stored in the /public/assets/images/covers directory. Make sure
 1. Home Page<br>
 ![Home Page](public/assets/ss/Homepg.png)
 
-2. Book Detail with Notes<br>
+2. Book Notes<br>
 ![Notes_Page](public/assets/ss/Detail.png)
 
 3. Add New Book<br>
 ![Add](public/assets/ss/Add.png)
 
-4. Edit Notes<br>
+4. Edit Details<br>
 ![Edit](public/assets/ss/Edit.png)
 
 🔗 License
