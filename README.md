@@ -2,25 +2,23 @@
 LibroSphere-Bookshelf is a personal web application designed to help users organize their non-fiction book reviews, track reading progress, and maintain notes for easy reference. Featuring sorting options, an integrated cover image fetcher, and an intuitive note-taking interface, BookNotes brings simplicity and structure to book tracking.
 
 # 📋 Features
-Home Page with Book List: Displays all stored books with sorting options by title, rating, or date read.
-Add/Edit/Delete Books: Easy CRUD operations for book entries, including details like title, author, date read, description, and cover image.
-View & Add Notes: Each book entry has its own note-taking area for storing, editing, and deleting notes.
-Automated Cover Image Fetching: Uses the Open Library API to retrieve and store book covers based on ISBN.
+Home Page with Book List: Displays all stored books with sorting options by title, rating, or date read.<br>
+Add/Edit/Delete Books: Easy CRUD operations for book entries, including details like title, author, date read, description, and cover image.<br>
+Automated Cover Image Fetching: Uses the Open Library API to retrieve and store book covers based on ISBN.<br>
 Data Persistence: Stores book and note data in a PostgreSQL database for robust, scalable storage.
 
-# 🏗️ Project Structure
-/public<br>
-├─ /assets<br>
-└─ /images/covers # Folder to store book cover images<br>
-/views<br>
-├─ index.ejs # Homepage with book list<br>
-├─ new.ejs # Form to add new books<br>
-├─ edit.ejs # Form to edit existing books<br>
-├─ notes.ejs # Notes section for each book<br>
-/src<br>
-├─ index.js # Main server file<br>
-.env # Environment variables<br>
-README.md # Project documentation<br>
+# 📷 Screenshots
+1. Home Page<br>
+![Home Page](public/assets/ss/Homepg.png)
+
+2. Book Notes<br>
+![Notes_Page](public/assets/ss/Detail.png)
+
+3. Add New Book<br>
+![Add](public/assets/ss/Add.png)
+
+4. Edit Details<br>
+![Edit](public/assets/ss/Edit.png)
 
 # 🚀 Project Setup/ Running Locally
 1. Clone the Repository.
@@ -80,18 +78,6 @@ View and Manage Notes: Each book page has a section to add, edit, or delete note
 Make sure your database connection details in .env match your PostgreSQL setup.
 Cover images are stored in the /public/assets/images/covers directory. Make sure this directory is accessible for image rendering.
 
-# 📷 Screenshots
-1. Home Page<br>
-![Home Page](public/assets/ss/Homepg.png)
-
-2. Book Notes<br>
-![Notes_Page](public/assets/ss/Detail.png)
-
-3. Add New Book<br>
-![Add](public/assets/ss/Add.png)
-
-4. Edit Details<br>
-![Edit](public/assets/ss/Edit.png)
 
 🔗 License
 This project is licensed under the MIT License.
